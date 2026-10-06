@@ -1,0 +1,211 @@
+
+
+/*começou o inferno */
+
+:root {
+	--fundo: #0e1424;
+	--papel: #161e33;
+	--tinta: #e6ebf7;
+	--suave: #9aa5c4;
+	--azul: #7b97ff;
+	--azul-claro: #1f2a50;
+	--linha: #27324f;
+}
+
+*{ box-sizing: border box; margin: 0 padding: 0;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 80px }
+body {
+	font-family: "Source Sans 3", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.65;
+	color: var(--tinta);
+	background: var(--fundo);
+}
+
+h1, h2, h3, .logo {
+	font-family: "space Grotesk", Arial, sans-serif;
+	line-height: 1.2;
+}
+
+a:focus-visible {outline: 3px solid var(--azul); outline-offset: 3px } 
+/*topo do escroto*/
+.topo{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 6vw;
+	background: rgba(14, 20, 36, 0.95);
+	border-bottom: 1px solid var(--linha);
+}
+.logo{
+	font font-weight: 700;
+	font-size: 1.2rem;
+	color: #0e1424;
+	background: var(--azul);
+	padding: 4px 10px;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+.topo nav a {display: flex; gap: 22px}
+.
+.topo nav a{
+	color: var(--tinta);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.topo nav a: hover {color: var(--azul); }
+/*to sem ideia do q fazer*/
+/*seçôes*/
+main { max-width:950px; margin:0 auto; padding: 0vw; }
+section {padding: 56px 0 8px; }
+
+h2{
+	font-size: 1.9rem;
+	margin-bottom: 20px;
+	padding-left: 14px;
+	border-left: 5px solid var(--azul);
+}
+
+h3 {
+	font-size: 1.15rem; margin-bottom: 4px; }
+	section p + p {margin-top: 12px; }
+
+	/*começo do começo*/
+	.hero{
+		display: grid;
+		grid-template-columns: 1.2fr 1fr ;
+		gap: 40px;
+		align-items: center;
+		padding-top: 72px;
+	}
+
+	.ola {color: var(--azul); font-weight: 600;}
+	h1{
+		font-size: clamp(2.2rem, 5vw, 3.4rem);
+		margin: 6px 0 14px;
+	}
+	.substituto {color: var(--suave); margin-bottom: 26px;}
+	.botao {
+		display: incline-block;
+		background: var(--azul);
+		color: #0e1424;
+		text-decoration: none;
+		font-weight: 600;
+		padding: 12px 24px;
+		border-radius: 8px;
+	}
+	.botao:hover {background: #9bb0ff;}
+	/*pedaçço  do codigo*/
+	.codigo{
+		background: #0a0f1e;
+		border: 1px solid  var(--linha);
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+	}
+
+	.codigo-barra {
+		display:flex;
+		gap: 6px;
+		padding: 10px 14px;
+		background: #070b16;
+	}
+
+	.codigo-barra span {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #4a5578;
+	}
+
+	.codigo pre {
+  padding: 18px 20px;
+  overflow-x: auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #dbe4ff;
+}
+
+.codigo .c { color: #7d89ad; }
+.codigo .k { color: #8fb0ff; }
+.codigo .s { color: #8be0b4; }
+.codigo .n { color: #ffc27a; }
+
+/* Linha do tempo */
+.linha-tempo { border-left: 2px solid var(--linha); margin-left: 6px; }
+
+.item { position: relative; padding: 0 0 26px 26px; }
+
+.item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--azul);
+  border: 3px solid var(--fundo);
+}
+
+.detalhe { color: var(--azul); font-weight: 600; font-size: 0.95rem; }
+
+/* Cartões */
+.cartao {
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 16px;
+}
+
+/* Habilidades */
+.colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+
+.tags li {
+  background: var(--azul-claro);
+  color: #b9c8ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+/* meu contato */
+.email {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--azul);
+  word-break: break-all;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 64px;
+  padding: 24px 6vw;
+  text-align: center;
+  color: var(--suave);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--linha);
+}
+
+/* Celular */
+@media (max-width: 720px) {
+  .topo nav { display: none; }
+  .hero, .colunas { grid-template-columns: 1fr; }
+  .hero { padding-top: 40px; }
+  body { font-size: 17px; }
+}
