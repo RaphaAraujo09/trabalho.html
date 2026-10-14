@@ -12,7 +12,7 @@
 	--linha: #27324f;
 }
 
-*{ box-sizing: border box; margin: 0 padding: 0;
+*{ box-sizing: border-box; margin: 0 padding: 0;
 }
 html { scroll-behavior: smooth; scroll-padding-top: 80px }
 body {
@@ -42,7 +42,7 @@ a:focus-visible {outline: 3px solid var(--azul); outline-offset: 3px }
 	border-bottom: 1px solid var(--linha);
 }
 .logo{
-	font font-weight: 700;
+	font-weight: 700;
 	font-size: 1.2rem;
 	color: #0e1424;
 	background: var(--azul);
@@ -51,19 +51,18 @@ a:focus-visible {outline: 3px solid var(--azul); outline-offset: 3px }
 	text-decoration: none;
 }
 
-.topo nav a {display: flex; gap: 22px}
-.
-.topo nav a{
+.topo nav {display: flex; gap: 22px}
+.topo nav {
 	color: var(--tinta);
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 0.95rem;
 }
 
-.topo nav a: hover {color: var(--azul); }
+.topo nav a:hover {color: var(--azul); }
 /*to sem ideia do q fazer*/
 /*seçôes*/
-main { max-width:950px; margin:0 auto; padding: 0vw; }
+main { max-width:950px; margin:0 auto; padding: 0 6vw; }
 section {padding: 56px 0 8px; }
 
 h2{
@@ -91,7 +90,7 @@ h3 {
 		font-size: clamp(2.2rem, 5vw, 3.4rem);
 		margin: 6px 0 14px;
 	}
-	.substituto {color: var(--suave); margin-bottom: 26px;}
+	.substitulo {color: var(--suave); margin-bottom: 26px;}
 	.botao {
 		display: incline-block;
 		background: var(--azul);
